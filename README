@@ -1,0 +1,22 @@
+
+                               ept-get
+
+ept-get is a software which allows to recoursively remove software on gentoo linux.
+
+It might also be useful for those, who already familiar with apt-get usage
+
+ept-get depends on epkg ( epkg.sf.net )
+
+Usage:
+
+ept-get remove packagename
+
+Removes package and all packages which depends on that package
+
+ept-get install package
+
+Installs package (currently this one just calls emerge)
+
+ept-get update (currently calls emerge --sunc)
+
+ept-get --download-only package (calls emerge -f package)
